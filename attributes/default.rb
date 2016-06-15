@@ -40,13 +40,5 @@ default['cookbook_moodle']['symlinks'] = []
 
 default['cookbook_moodle']['newrelic']['license_key'] = nil
 
-default['cookbook_moodle']['rackspace']['username'] = ''
-default['cookbook_moodle']['rackspace']['api_key'] = ''
-default['cookbook_moodle']['rackspace']['auth_region'] = 'uk'
-default['cookbook_moodle']['rackspace']['endpoint'] = 'lon'
-default['cookbook_moodle']['rackspace']['monitoring'] = true
-default['cookbook_moodle']['rackspace']['backup'] = true
-default['cookbook_moodle']['rackspace']['backup_container'] = ''
-
 default['build-essential']['compile_time'] = true
 
