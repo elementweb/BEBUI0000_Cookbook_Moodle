@@ -19,6 +19,7 @@ default["cookbook_moodle"]["default_config"]["nginx"]["template_name"] = "nginx_
 default["cookbook_moodle"]["default_config"]["nginx"]["template_cookbook"] = "cookbook_moodle"
 default["cookbook_moodle"]["default_config"]["nginx"]["listen_port"] = "80"
 
+default["cookbook_moodle"]["redirects"] = []
 default['cookbook_moodle']['cronic'] = '/opt/bin/cronic'
 default['cookbook_moodle']['cron_hour'] = "*"
 default['cookbook_moodle']['cron_minute'] = "*/5"
