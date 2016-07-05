@@ -29,7 +29,7 @@ server {
 <% end -%>
     }
 
-    <% @redirects.each do |name,value| -%>
+    <% @redirects.each do |name, value| -%>
     location ~ <%= @name %> {
         return 301 <%= @value %>;
     }
