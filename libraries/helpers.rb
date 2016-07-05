@@ -33,7 +33,7 @@ module PHPBox
           :ssl_key        => config["ssl_key"],
           :ssl_cert       => config["ssl_cert"],
           :htpasswd_path  => htpasswd_path,
-          :redirects   => config["redirects"]
+          :redirects      => config["redirects"]
         )
         notifies :reload, "service[nginx]"
       end
