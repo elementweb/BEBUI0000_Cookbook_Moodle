@@ -4,7 +4,7 @@ maintainer_email 'fred.thompson@buildempire.co.uk'
 license          'Apache 2.0'
 description      'The Moodle cookbook, a fresh moodle deployment'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '1.0.14'
+version          '1.0.15'
 
 recipe 'cookbook_moodle', 'The Moodle cookbook, a fresh moodle deployment.'
 
