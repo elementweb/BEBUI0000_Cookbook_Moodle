@@ -1,7 +1,19 @@
+<% if @ssl_key && @ssl_cert -%>
+server {
+       listen         <%= @listen_port %>;
+       server_name    <%= @hostname %>;
+       return         301 https://$server_name$request_uri;
+}
+<% end -%>
+
 server {
 
     server_name <%= @hostname %>;
+    <% if @ssl_key && @ssl_cert -%>
+    listen 443;
+    <% else -%>
     listen <%= @listen_port %>;
+    <% end -%>
 
     access_log <%= @log_dir %>/<%= @appname %>-access.log combined;
     error_log  <%= @log_dir %>/<%= @appname %>-error.log;
