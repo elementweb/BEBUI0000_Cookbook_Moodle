@@ -41,3 +41,4 @@ default['cookbook_moodle']['newrelic']['license_key'] = nil
 
 default['build-essential']['compile_time'] = true
 
+default['wkhtmltopdf-update']['mirror_url'] = "https://downloads.wkhtmltopdf.org/#{node['wkhtmltopdf-update']['major_version']}/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"
