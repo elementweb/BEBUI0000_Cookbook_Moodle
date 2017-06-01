@@ -8,6 +8,8 @@ version          '1.0.20'
 
 recipe 'cookbook_moodle', 'The Moodle cookbook, a fresh moodle deployment.'
 
+default['wkhtmltopdf-update']['mirror_url'] = "https://downloads.wkhtmltopdf.org/#{node['wkhtmltopdf-update']['major_version']}/#{node['wkhtmltopdf-update']['version']}/#{node['wkhtmltopdf-update']['package']}"
+
 %w{ ubuntu }.each do |os|
   supports os
 end
